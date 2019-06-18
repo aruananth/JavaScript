@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo2"></p>
+<p id="demo"></p>
+<p id="demo3"></p>
+<script>
+var fruits = ["Apple","Banana"];
+function myFunction() {
+  fruits.splice(1, 0, "Lemon", "Kiwi", "orange");
+  document.getElementById("demo2").innerHTML =  fruits;
+document.getElementById("demo").innerHTML = fruits.length;
+  fruits.sort();
+  fruits.reverse();
+  document.getElementById("demo3").innerHTML = fruits;
+}
+
+</script>
+
+</body>
+</html>
